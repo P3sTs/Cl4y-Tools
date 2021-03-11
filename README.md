@@ -1,6 +1,13 @@
 ### Hi there 👋
 
 ### Gerador de dados em "python3"  
+
+### Menu com 4 opção.
+# [1] CPF
+# [2] Gerar CCFUL
+# [3] Bin-Válida
+# [4] Sair do Programa
+# Qual foi a sua Escolha?.
 <!--
 **ZaRtANNNN/ZaRtANNNN** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
