@@ -11,10 +11,9 @@ Here are some ideas to get you started:
 
 - 👯 Estou procurando colaborar em projetos futuros, bem aqui no "github"
 
-- 🤔 Estou procurando ajuda com "php"
-
+- 🤔 Estou procurando ajuda com "python3"
 - 📫 Como chegar até mim:
 email: pzika452@gmail.com ...
 
 -😄 pronomes onom:
-Dantas
+Cl4y
