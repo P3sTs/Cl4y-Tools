@@ -8,8 +8,6 @@
 # [3] Bin-Válida
 # [4] Sair do Programa
 # Qual foi a sua Escolha?.
-<!--
-**ZaRtANNNN/ZaRtANNNN** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -20,8 +18,9 @@ Here are some ideas to get you started:
 - 👯 Estou procurando colaborar em projetos futuros, bem aqui no "github"
 
 - 🤔 Estou procurando ajuda com "python3"
+
 - 📫 Como chegar até mim:
-email: pzika452@gmail.com ...
+email: pdantas950@gmail.com ...
 
 -😄 pronomes onom:
 Cl4y
