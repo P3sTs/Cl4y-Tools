@@ -1,5 +1,13 @@
 
-### Gerador de dados em "python3".  
+### Gerador de dados em "python3".
+
+████████╗ ██████╗  ██████╗ ██╗     ███████╗
+╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
+   ██║   ██║   ██║██║   ██║██║     ███████╗
+   ██║   ██║   ██║██║   ██║██║     ╚════██║
+   ██║   ╚██████╔╝╚██████╔╝███████╗███████║
+   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ 
+ Obrigado a todos, pelo o uso dessa ferramenta
 
 ### Menu com 4 opção.
 # Qual foi a sua Escolha?.
