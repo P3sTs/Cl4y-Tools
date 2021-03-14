@@ -1,13 +1,26 @@
+# Criador do Gerador #Cl4y#
 #!/bin/bash
 #!/usr/bin/env python3
+from banner import Banner
+import re
+import requests
+from subprocess import run
+from os import system
 import os
 import random 
-# Criador do Gerador #Cl4y#
 from time import sleep
 opcao = 0
 import getpass
 from random import randint
+# Cores
+R = '\033[1;31m'
+B = '\033[1;34m'
+C = '\033[1;37m'
+Y = '\033[1;33m'
+G = '\033[1;32m'
+RT = '\033[;0m'
 
+clear = lambda: os.system('clear')
 
 def cpf_validate(numbers):
     #  Obtém os números do CPF e ignora outros caracteres
@@ -113,33 +126,52 @@ listname2 =  random.choice(name2)
 listname3 =  random.choice(name3)
 listname4 =  random.choice(name3)
 
-print( "#########################################################")
-print( "#############                             ###############")
-print( "#############           Cl4Y              ###############")
-print( "#############          Gerador            ###############")
-print( "#########################################################")
-print ("#############     [ 1 ] CPF.              ###############")
+print(f'''{G}*By Cl4y
+{C}████████╗ ██████╗  ██████╗ ██╗     ███████╗
+{C}╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
+{C}   ██║   ██║   ██║██║   ██║██║     ███████╗
+{C}   ██║   ██║   ██║██║   ██║██║     ╚════██║
+{C}   ██║   ╚██████╔╝╚██████╔╝███████╗███████║
+{C}   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ {G}V.Beta.1
+{G} Obrigado a todos, pelo o uso dessa ferramenta{C} !''')
 
-print ("#############     [ 2 ] Gerar CCFUL.      ##############")
-
-print ("#############     [ 3 ] Bin Válida.       ###############")
-
-print ("#############     [ 4 ] Gerar CPF e SENHA.###############")
-
-print ("#############     [ 5 ] CVV.              ###############")
-
-print ("#############     [ 6 ] Gerar NOME.       ###############")
-
-print ("#############     [ 0 ] Sair do Programa. ###############")
-print( "#########################################################")
- 
-opcao = int(input('''l foi a sua Escolha:-->'''))
-
+sleep(1)
+print()
+print(f'''{R}#########################################################{C}''')
+sleep(1)
+print (f'''#############  {B}[ 1{G} ✓{B} ] {G} CPF.{C}              ###############''')
+sleep(1)
+print()
+print (f'''#############  {B}[ 2{G} ✓{B} ] {G} Gerar CCFUL.{C}      ###############''')
+sleep(1)
+print()
+print (f'''#############  {B}[ 3{G} ✓{B} ] {G} Bin Válida.{C}       ###############''')
+sleep(1)
+print()
+print (f'''#############  {B}[ 4{G} ✓{B} ] {G} Gerar CPF e SENHA.{C}###############''')
+sleep(1)
+print()
+print (f'''#############  {B}[ 5{G} ✓{B} ] {G} CVV.{C}              ###############''')
+sleep(1)
+print()
+print (f'''#############  {B}[ 6{G} ✓{B} ] {G} Gerar NOME.{C}       ###############''')
+sleep(1)
+print()
+print (f'''#############{B}  [ 0{G} ✓{B} ] {G} Sair do Programa.{C} ###############''')
+sleep(1)
+print()
+print(f'''{R}#########################################################{C}''')
+print()
+sleep(1)
+opcao = int(input(f'''Qual foi a sua Escolha:-->'''))
+clear()
 
 if opcao == 1:
- opcao = int(input('''[7] Validar um CPF
-[8] Gerar um CPF válido
+
+ opcao = int(input(f'''{R}[7]{B} Validar um CPF
+{R}[8]{B} Gerar um CPF válido{C}
 Opção: '''))
+
 if opcao == 7:
     cpf = input('Digite o CPF: ')
     if cpf_validate(cpf):
@@ -163,16 +195,16 @@ if opcao == 2:
 
     print("Data do cartão:-->", data1, data2, data3)
 
-    
+   
 if opcao == 3:
 	print("Bin-Valida:--> ",binlist1)
 if opcao == 4:
 
 	print ("SENHA:--> ", senha3)
-	
+	   
 if opcao == 5:
 	print ("CVV:--> ", cvv)
-
+	
 if opcao == 6:	
  	
 	print ("Nome:-->", listname, listname2, listname3, listname4)
