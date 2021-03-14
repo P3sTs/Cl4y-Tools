@@ -5,7 +5,9 @@
 # Qual foi a sua Escolha?.
 
 ## [ 1 ] CPF.  
-#*CPF:--> 513906*****
+#*[7] Validar um CPF
+#*[8] Gerar um CPF válido
+Opção:
 
 #*Fim do Programa! Volte Sempre!!
 
