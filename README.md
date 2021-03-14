@@ -1,14 +1,13 @@
 
 ### Gerador de dados em "python3".
-print(f'''{G}*By Cl4y
-{C}████████╗ ██████╗  ██████╗ ██╗     ███████╗
-{C}╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
-{C}   ██║   ██║   ██║██║   ██║██║     ███████╗
-{C}   ██║   ██║   ██║██║   ██║██║     ╚════██║
-{C}   ██║   ╚██████╔╝╚██████╔╝███████╗███████║
-{C}   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ {G}V.Beta.1
-{G} Obrigado a todos, pelo o uso dessa ferramenta{C} !''')
+##████████╗ ██████╗  ██████╗ ██╗     ███████╗
+##╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
+##   ██║   ██║   ██║██║   ██║██║     ███████╗
+##   ██║   ██║   ██║██║   ██║██║     ╚════██║
+##   ██║   ╚██████╔╝╚██████╔╝███████╗███████║
+##   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ {G}V.Beta.1{G} Obrigado a todos, pelo o uso dessa ferramenta{C} !''')
 ### Menu com 4 opção.
+
 # Qual foi a sua Escolha?.
 
 ## [ 1 ] CPF.  
@@ -23,7 +22,7 @@ Opção:
 ## [ 2 ] Gerar CCFUL. 
 #*Nome do Cadastrado:--> Pedro Pereira Silva Dantas
 
-#*Número do cartão:--> 5067 1177424226
+#*Número do cartão:--> 5067 11774*****
 
 #*Cvv do cartão:--> 556
 
@@ -53,7 +52,7 @@ Opção:
 
 ## [ 6 } Gerar Nome.     
 
-#*CPF:--> 5260999537
+#*CPF:--> 52609*****
 
 #*Nome:--> Raimundo Silva Henrique David
 
