@@ -6,6 +6,7 @@
 
 ## [ 1 ] CPF.  
 #*[7] Validar um CPF
+
 #*[8] Gerar um CPF válido
 Opção:
 
@@ -20,8 +21,6 @@ Opção:
 #*Cvv do cartão:--> 556
 
 #*Data do cartão:--> 25 7 2025
-
-#*CPF cadastrado no cartão:--> 28461064259
 
 #*Fim do Programa! Volte Sempre!!
 
