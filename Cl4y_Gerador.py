@@ -1,7 +1,6 @@
 # Criador do Gerador #Cl4y#
 #!/bin/bash
 #!/usr/bin/env python3
-from banner import Banner
 import re
 import requests
 from subprocess import run
