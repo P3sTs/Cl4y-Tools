@@ -8,6 +8,7 @@ from subprocess import run
 from os import system
 import os
 import random 
+
 from time import sleep
 opcao = 0
 import getpass
@@ -126,89 +127,91 @@ listname2 =  random.choice(name2)
 listname3 =  random.choice(name3)
 listname4 =  random.choice(name3)
 
-print(f'''{G}*By Cl4y
-{C}████████╗ ██████╗  ██████╗ ██╗     ███████╗
-{C}╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
+print(f'''{G}*Criador Cl4y
+{R}████████╗ ██████╗  ██████╗ ██╗     ███████╗
+{B}╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
 {C}   ██║   ██║   ██║██║   ██║██║     ███████╗
-{C}   ██║   ██║   ██║██║   ██║██║     ╚════██║
-{C}   ██║   ╚██████╔╝╚██████╔╝███████╗███████║
-{C}   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ {G}V.Beta.1
+{Y}   ██║   ██║   ██║██║   ██║██║     ╚════██║
+{RT}   ██║   ╚██████╔╝╚██████╔╝███████╗███████║
+{R}   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝ {G}V.Beta.1
 {G} Obrigado a todos, pelo o uso dessa ferramenta{C} !''')
 
 sleep(1)
 print()
 print(f'''{R}#########################################################{C}''')
 sleep(1)
-print (f'''#############  {B}[ 1{G} ✓{B} ] {G} CPF.{C}              ###############''')
+print (f'''{Y}#############  {B}[ 1{G} ✓{B} ] {G} CPF.{Y}             ###############{C}''')
 sleep(1)
 print()
-print (f'''#############  {B}[ 2{G} ✓{B} ] {G} Gerar CCFUL.{C}      ###############''')
+print (f'''{Y}#############  {B}[ 2{G} ✓{B} ] {G} Gerar CCFUL.{Y}      ###############{C}''')
 sleep(1)
 print()
-print (f'''#############  {B}[ 3{G} ✓{B} ] {G} Bin Válida.{C}       ###############''')
+print (f'''{Y}#############  {B}[ 3{G} ✓{B} ] {G} Bin Válida.{Y}       ###############{C}''')
 sleep(1)
 print()
-print (f'''#############  {B}[ 4{G} ✓{B} ] {G} Gerar CPF e SENHA.{C}###############''')
+print (f'''{Y}#############  {B}[ 4{G} ✓{B} ] {G} Gerar CPF e SENHA.{Y}###############{C}''')
 sleep(1)
 print()
-print (f'''#############  {B}[ 5{G} ✓{B} ] {G} CVV.{C}              ###############''')
+print (f'''{Y}#############  {B}[ 5{G} ✓{B} ] {G} CVV.{Y}              ###############{C}''')
 sleep(1)
 print()
-print (f'''#############  {B}[ 6{G} ✓{B} ] {G} Gerar NOME.{C}       ###############''')
+print (f'''{Y}#############  {B}[ 6{G} ✓{B} ] {G} Gerar NOME.{Y}       ###############{C}''')
 sleep(1)
 print()
-print (f'''#############{B}  [ 0{G} ✓{B} ] {G} Sair do Programa.{C} ###############''')
+print (f'''{Y}#############{B}  [ 0{G} ✓{B} ] {G} Sair do Programa.{Y} ###############{C}''')
 sleep(1)
 print()
 print(f'''{R}#########################################################{C}''')
 print()
 sleep(1)
-opcao = int(input(f'''Qual foi a sua Escolha:-->'''))
+opcao = int(input(f''' {Y} Qual foi a sua Escolha:--> {C} '''))
 clear()
 
 if opcao == 1:
 
  opcao = int(input(f'''{R}[7]{B} Validar um CPF
 {R}[8]{B} Gerar um CPF válido{C}
-Opção: '''))
+ {Y} opção:-->  {C}'''))
 
-if opcao == 7:
-    cpf = input('Digite o CPF: ')
+
+ if opcao == 7:
+    cpf = input('Digite o CPF sem pontos e traços:-->  ')
     if cpf_validate(cpf):
-        print('CPF válido.')
+        print(f'''#############  {B}[ {G} ✓{B} ] {G} CPF Válido:-->{C}       ###############.''')
+        sleep(3)
     else:
-        print('CPF inválido.')
+        print(f'''#############  {R}[ ✓ ] CPF Inválido:-->{C}       ###############.''')
 elif opcao == 8:
     cpf = cpf_generate()
     if cpf_validate(cpf):
-        print(f'CPF gerado: {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]}')
-else:
-    print('Inválido.')
+        print(f'''############# {G} CPF Gerado:--> {C} {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]} ###############''')
+        
+
 if opcao == 2:
 	
  
-    print("Nome do Cadastrado:-->", listname, listname2, listname3, listname4 )
-    
-    print("Número do cartão:-->", binlist1,nume2)
-
-    print("Cvv do cartão:-->",cvv)
-
-    print("Data do cartão:-->", data1, data2, data3)
+    print(f'''{Y}############# {G} Nome do Cadastrado:-->  {C}''' , listname, listname2, listname3, listname4 )
+    sleep(1)
+    print(f'''{Y}############# {G} Número do cartão:--> {C}''', binlist1,nume2)
+    sleep(2)
+    print(f'''{Y}############# {G} Cvv do cartão:-->  {C}''',cvv)
+    sleep(3)
+    print(f'''{Y}############# {G} Data do cartão:--> {C}''', data1, data2, data3)
 
    
 if opcao == 3:
-	print("Bin-Valida:--> ",binlist1)
+	print(f'''{Y}############# {G} BIN Válida:-->  {C}''',binlist1)
 if opcao == 4:
 
-	print ("SENHA:--> ", senha3)
+	print (f'''{Y}#############{G} Senha:-->  {C}''', senha3)
 	   
 if opcao == 5:
-	print ("CVV:--> ", cvv)
+	print (f'''{Y}#############{G} CVV:-->  {C}''', cvv)
 	
 if opcao == 6:	
  	
-	print ("Nome:-->", listname, listname2, listname3, listname4)
-	
+	print (f'''{Y}#############{G} Nome:-->  {C}''', listname, listname2, listname3, listname4, data1, data2, data3)
+	sleep(2)
 if opcao == 0:
 
 	print("Finalizado Script ")
@@ -216,4 +219,5 @@ if opcao == 0:
 	exit()
 
 	print("=-=" * 10)
+
 print("Fim do Programa! Volte Sempre!!")	
