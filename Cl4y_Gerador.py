@@ -64,43 +64,11 @@ def cpf_generate():
 
 
 
-list1 = [ 35, 38, 60, 50, 60, 636368, 636369, 438935, 504175, 451416, 636297, 5067, 4576, 4011, 506699,]
+list1 = [ "cbr35", "38", "60", "50", "60", "636368", "636369", "438935", "504175", "451416", "636297", "5067", "4576", "4011", "506699",]
 # lista data de vencimento
 list = [ 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2035, 2036, 2037, 2038, 2049, 2050,]
 # Lista de senhas
-list3 =("ivyjovan",
-"mividaes1kk",
-"mividaes10",
-"mividaerstuteamo",
-"mividaerstu",
-"mividaerrada",
-"mividaerestusoly",
-"mividaeresturkl",
-"mividaeresturami",
-"mividaerestur",
-"mividaerestuloca",
-"mividaerestujair",
-"mividaerestuivon",
-"mividaerestufr4n",
-"mividaerestubrenda141516",
-"mividaerestubb",
-"mividaerestu6405",
-"mividaerestu3112",
-"mividaerestu3003",
-"mividaerestu3",
-"mividaerestu2706",
-"mividaerestu24",
-"mividaerestu2021",
-"mividaerestu16",
-"mividaerestu12_",
-"mividaerestu10",
-"mividaerestu.amor",
-"mividaerestu-18",
-"mividaerestU1",
-"mividaerest(U)",
-"mividaeresfrank",
-"mividaeres tu",
-"mividaentusmanos",
+list3 =(
 "mividaentera1","mividaentera01","mividaenrosayael",
 "mividaenrosa","mividaelrock@hotmail.com",
 "mividaelparaiso","mividaeamo","mividadura","mividadiva","mividadios",
@@ -111,9 +79,7 @@ list3 =("ivyjovan",
 name = ("Pedro", "Yuri", "Igor", "Matheus", "Francisco", "José", "João", "Carlos", "Paulo", "Lucas", "Marcelo", "Daniel", "Raimundo", "Rodrigo", "Eduardo", "Luiz" "Diego", "Kaike") 
 
 name2 = ("Pereira", "Silva", "Roberto", "Carneiro",)
- 
 name3 = ("Henrique", "Grabriel",  "Dantas", "Silva", "David",) 
-
 nume2 = random.randrange(1, 9999999999)
 binlist1 = random.choice(list1)	
 cvv = random.randint(3, 999)
@@ -125,6 +91,8 @@ listname = random.choice(name)
 listname2 =  random.choice(name2)
 listname3 =  random.choice(name3)
 listname4 =  random.choice(name3)
+cpf = cpf_generate()
+cpf_validate(cpf)
 
 print(f'''{G}*Criador Cl4y
 {R}████████╗ ██████╗  ██████╗ ██╗     ███████╗
@@ -163,7 +131,7 @@ print()
 print(f'''{R}#########################################################{C}''')
 print()
 sleep(1)
-opcao = int(input(f''' {Y} Qual foi a sua Escolha:--> {C} '''))
+opcao = int(input(f''' {Y} Faça uma Escolha:--> {C} '''))
 clear()
 
 if opcao == 1:
@@ -176,14 +144,14 @@ if opcao == 1:
  if opcao == 7:
     cpf = input('Digite o CPF sem pontos e traços:-->  ')
     if cpf_validate(cpf):
-        print(f'''#############  {B}[ {G} ✓{B} ] {G} CPF Válido:-->{C}       ###############.''')
-        sleep(3)
+        print(f'''{Y}#############  {B}[ {G} ✓{B} ] {G} CPF Válido:-->{C}    ''')
+        sleep(1)
     else:
-        print(f'''#############  {R}[ ✓ ] CPF Inválido:-->{C}       ###############.''')
+        print(f'''{Y}#############  {R}[ ✓ ] CPF Inválido:-->{C}      ''')
 elif opcao == 8:
     cpf = cpf_generate()
     if cpf_validate(cpf):
-        print(f'''############# {G} CPF Gerado:--> {C} {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]} ###############''')
+        print(f'''{Y}############# {G} CPF Gerado:--> {B} {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]} ''')
         
 
 if opcao == 2:
@@ -200,23 +168,24 @@ if opcao == 2:
    
 if opcao == 3:
 	print(f'''{Y}############# {G} BIN Válida:-->  {C}''',binlist1)
-if opcao == 4:
-
-	print (f'''{Y}#############{G} Senha:-->  {C}''', senha3)
-	   
+    
+if opcao == 4: 
+ 
+  print(f'''{Y}############# {G} CPF Gerado:--> {B}  {cpf[:3]}.{cpf[3:6]}.{cpf[6:9]}-{cpf[9:]} {C}''')
+  print (f'''{Y}#############{G} Senha:-->  {B}''', senha3)
+  
 if opcao == 5:
-	print (f'''{Y}#############{G} CVV:-->  {C}''', cvv)
-	
+	print (f'''{Y}#############{G} CVV:--> {B} ''', cvv)
 if opcao == 6:	
  	
-	print (f'''{Y}#############{G} Nome:-->  {C}''', listname, listname2, listname3, listname4, data1, data2, data3)
-	sleep(2)
+	print (f'''{Y}#############{G} Nome:-->  {B}''', listname, listname2, listname3, listname4, data1, data2, data3)
+	
 if opcao == 0:
 
-	print("Finalizado Script ")
+	print("{Y}Finalizado Script ")
 
 	exit()
 
 	print("=-=" * 10)
 
-print("Fim do Programa! Volte Sempre!!")	
+print("Fim do Programa! Volte Sempre!!{C}")	
