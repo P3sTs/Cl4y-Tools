@@ -1,4 +1,4 @@
-<img src="dinossauro.jpg">
+<img src="Captura de tela de 2021-03-14 22-47-07.png">
 
 
 ### Gerador de dados em "python3"
