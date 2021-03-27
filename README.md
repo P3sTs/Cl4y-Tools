@@ -1,3 +1,5 @@
+<img src="dinossauro.jpg">
+
 
 ### Gerador de dados em "python3"
 
