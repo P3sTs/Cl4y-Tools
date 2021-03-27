@@ -1,5 +1,5 @@
 <img src="Captura de tela de 2021-03-14 22-47-07.png">
- alt="você faz uma escolha, refrente ao quer.">
+ <alt="você faz uma escolha, refrente ao quer.">
 
 ### Gerador de dados em "python3"
 
