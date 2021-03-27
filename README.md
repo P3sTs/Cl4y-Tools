@@ -5,7 +5,7 @@
 
 *python3 Clay_Gerador.py
 
-### Menu com 4 opção.
+### Menu com 6 opção.
 
 # Qual foi a sua Escolha?.
 
